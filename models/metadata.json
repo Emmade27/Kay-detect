@@ -1,0 +1,53 @@
+{
+  "class_names": [
+    "Ripe",
+    "Unripe",
+    "Old",
+    "Damaged"
+  ],
+  "binary_mapping": {
+    "Ripe": "Good Quality",
+    "Unripe": "Low Quality",
+    "Old": "Low Quality",
+    "Damaged": "Low Quality"
+  },
+  "feature_names": [
+    "rgb_mean_r",
+    "rgb_mean_g",
+    "rgb_mean_b",
+    "rgb_std_r",
+    "rgb_std_g",
+    "rgb_std_b",
+    "hsv_mean_h",
+    "hsv_mean_s",
+    "hsv_mean_v",
+    "hsv_std_h",
+    "hsv_std_s",
+    "hsv_std_v",
+    "glcm_contrast",
+    "glcm_homogeneity",
+    "glcm_energy",
+    "glcm_correlation",
+    "glcm_asm",
+    "area_ratio",
+    "perimeter_ratio",
+    "circularity",
+    "aspect_ratio",
+    "extent",
+    "dark_spot_ratio",
+    "edge_density",
+    "redness_index",
+    "green_to_red_ratio"
+  ],
+  "dataset_source": "demo_synthetic_dataset",
+  "dataset_counts": {
+    "Ripe": 120,
+    "Unripe": 120,
+    "Old": 120,
+    "Damaged": 120
+  },
+  "demo_model": true,
+  "trained_at": "2026-04-21T17:46:03.563348Z",
+  "validation_accuracy": 1.0,
+  "macro_f1": 1.0
+}

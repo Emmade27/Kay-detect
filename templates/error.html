@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} | Tomato Quality AI{% endblock %}
+{% block content %}
+<div class="card shadow-sm border-0 mx-auto" style="max-width: 720px;">
+    <div class="card-body p-5 text-center">
+        <div class="display-3 mb-3">⚠️</div>
+        <h1 class="h3 fw-bold mb-3">{{ title }}</h1>
+        <p class="text-secondary mb-4">{{ message }}</p>
+        <a class="btn btn-success" href="{{ url_for('home') }}">Go Back Home</a>
+    </div>
+</div>
+{% endblock %}
+
+

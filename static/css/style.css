@@ -1,0 +1,93 @@
+:root {
+  --green-900: #14532d;
+  --green-700: #15803d;
+  --green-600: #16a34a;
+  --green-100: #dcfce7;
+  --green-50: #f0fdf4;
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-600: #475569;
+  --gray-900: #0f172a;
+}
+
+body {
+  background: linear-gradient(180deg, var(--green-50), #ffffff);
+  color: var(--gray-900);
+}
+
+.nav-green {
+  background: linear-gradient(90deg, var(--green-900), var(--green-700));
+}
+
+.hero-card {
+  background: radial-gradient(circle at top right, rgba(22,163,74,0.12), transparent 30%), white;
+  border: 1px solid rgba(20,83,45,0.08);
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.06);
+}
+
+.feature-card,
+.stat-card,
+.mini-stat-card {
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 1rem;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.preview-box {
+  min-height: 300px;
+  border: 2px dashed #cbd5e1;
+  background: var(--gray-50);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.preview-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.camera-shell {
+  min-height: 280px;
+  background: #0f172a;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cameraVideo {
+  min-height: 280px;
+  object-fit: cover;
+  background: #0f172a;
+}
+
+.confidence-badge {
+  min-width: 110px;
+  text-align: center;
+  background: var(--green-100);
+  color: var(--green-900);
+  border-radius: 999px;
+  padding: 0.85rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.mini-stat-card {
+  background: white;
+  padding: 1rem;
+}
+
+.pipeline-list li {
+  margin-bottom: 0.7rem;
+}
+
+.table thead th {
+  white-space: nowrap;
+}

@@ -1,0 +1,27 @@
+{
+  "verified_routes": [
+    "/",
+    "/predict-page",
+    "/predict (upload)",
+    "/predict (camera)",
+    "/result/<id>",
+    "/history",
+    "/admin",
+    "/admin/export/csv",
+    "/admin/export/pdf",
+    "/health"
+  ],
+  "checks": {
+    "model_auto_generation": true,
+    "upload_prediction_flow": true,
+    "camera_prediction_flow": true,
+    "history_storage_sqlite": true,
+    "csv_export": true,
+    "pdf_export": true,
+    "health_endpoint": true
+  },
+  "notes": [
+    "The packaged project includes demo-model generation so the interface runs immediately.",
+    "Retrain with the Kaggle dataset for real project evaluation."
+  ]
+}
